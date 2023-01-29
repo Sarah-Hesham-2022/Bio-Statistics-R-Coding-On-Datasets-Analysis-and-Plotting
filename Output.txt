@@ -1,0 +1,1098 @@
+[1] "#1. Show the first 10 rows and the last 10 rows."
+               id gender        dob zipcode employment_status  education marital_status children ancestry
+1    Amelia Nixon female 1944-03-09   89136           retired  bachelors        married        1 Portugal
+2     Clara Hicks female 1966-07-02   94105          employed     phd/md        married        4   Sweden
+3     Mason Brown   male 1981-05-31   89127          employed    masters        married        2  Germany
+4    Michael Rice   male 1945-02-13   44101           retired  bachelors        married        2  Denmark
+5  Eleanor Ritter female 1939-09-03   89136           retired    masters        married        3  Austria
+6      Sofia Wise female 1956-10-16   94105        unemployed highschool        married        2  Austria
+7    Nevaeh Perry female 1946-09-30   60612           retired     phd/md        married        0  Hungary
+8   Addison Combs female 1963-01-17   43221          employed  bachelors        married        2  Ireland
+9   Ashley Wilson female 1946-10-21   89127           retired    masters         single        2  Austria
+10     Levi Burns   male 1958-01-31   43210          employed highschool        married        7  Ukraine
+   avg_commute daily_internet_use             disease
+1        13.38               2.53        hypertension
+2        15.16               6.77       endometriosis
+3        23.60               3.63     prostate cancer
+4        19.61               5.00  multiple sclerosis
+5        36.55               7.75         skin cancer
+6        48.68               3.34 Alzheimer's disease
+7        30.92               6.75      kidney disease
+8        20.47               3.01       breast cancer
+9        39.13               4.12 Alzheimer's disease
+10       37.69               3.15            HIV/AIDS
+                    id gender        dob zipcode employment_status  education marital_status children    ancestry
+1991      Diego Hardin   male 1949-05-14   10001           retired  bachelors         single        1      Poland
+1992      Jayden Craig   male 1953-02-02   89127          employed  bachelors        married        5      Sweden
+1993        Zoey Green female 1972-12-20   60612        unemployed highschool         single        4      Russia
+1994        Mia Acosta female 1950-04-15   94105        unemployed  bachelors        married        4     Belgium
+1995     Tyler Holland   male 1956-09-21   44101           retired highschool        married        0     Finland
+1996     Ethan Johnson   male 1942-04-13   89127           retired    masters        married        1 Switzerland
+1997 Natalia Dominguez female 1963-05-10   60612        unemployed highschool        married        4     Denmark
+1998     Joseph Zuniga   male 1965-07-12   94110          employed  bachelors        married        2      Russia
+1999     Daniel Murphy   male 1926-08-10   90015           retired  bachelors        married        3     Finland
+2000     Samuel Harris   male 1948-11-22   43210           retired  bachelors        married        5    Scotland
+     avg_commute daily_internet_use         disease
+1991       35.12               4.57    hypertension
+1992       18.11               4.97 prostate cancer
+1993       28.50               7.08        diabetes
+1994       24.46               6.69  kidney disease
+1995       25.07               5.78        HIV/AIDS
+1996       28.48               5.88   heart disease
+1997       21.09               5.92       gastritis
+1998       30.80               4.91    hypertension
+1999       37.56               2.69 prostate cancer
+2000       49.34               4.77    hypertension
+
+
+[1] "#2. Using Date of Birth attribute, extracts the gender, average commuting time, and ancestry data for the oldest three."
+    gender avg_commute ancestry
+981   male       28.38   Poland
+218 female       36.27   Poland
+89    male       39.44   Sweden
+
+
+[1] "#3. Identifies the gender, daily internet use, average commute time, ancestry,and diseases among those with more than two children."
+    gender daily_internet_use avg_commute       ancestry             disease
+2   female               6.77       15.16         Sweden       endometriosis
+5   female               7.75       36.55        Austria         skin cancer
+10    male               3.15       37.69        Ukraine            HIV/AIDS
+12  female               2.65       24.20    Netherlands  multiple sclerosis
+13    male               2.52       49.61        Ireland        hypertension
+15  female               7.41       33.01        Ireland       heart disease
+20    male               7.25       27.93       Portugal        hypertension
+26    male               1.44       27.98       Portugal         skin cancer
+30    male               7.69       40.44        Ireland           gastritis
+32    male               5.25       26.40         France      kidney disease
+37  female               6.32       40.02        Finland            HIV/AIDS
+38    male               1.82       37.84        England        hypertension
+39    male               6.62       29.74       Scotland     prostate cancer
+49  female               3.78       19.20    Switzerland        hypertension
+50    male               2.46       35.44    Switzerland     prostate cancer
+59  female               3.67       36.73    Netherlands Alzheimer's disease
+62  female               4.08       44.45        Ireland      kidney disease
+64    male               5.24       26.51          Spain            HIV/AIDS
+69    male               5.19       35.77         Poland            diabetes
+75    male               3.70       36.65         Sweden            diabetes
+76    male               5.55       33.71          Spain Alzheimer's disease
+77  female               4.02        9.10        Ukraine Alzheimer's disease
+79  female               1.76       27.52         France Alzheimer's disease
+89    male               6.64       39.44         Sweden        hypertension
+95  female               6.15       35.73        Austria      kidney disease
+96    male               4.49       34.69        Austria         skin cancer
+97  female               5.00       37.79        Denmark  multiple sclerosis
+98  female               4.51       24.17        Belgium       heart disease
+100 female               7.66       29.97         Russia       breast cancer
+106   male               4.29       25.87         Sweden Alzheimer's disease
+107   male               5.13       38.73       Scotland            HIV/AIDS
+108   male               3.57       41.08        Germany      kidney disease
+111 female               1.40       11.25         Sweden      kidney disease
+114 female               5.91       40.85         France      kidney disease
+118   male               5.29       28.02       Portugal      kidney disease
+119   male               6.93       30.68         Poland         skin cancer
+120   male               4.17       32.40          Spain         skin cancer
+125 female               3.70       48.61         Poland Alzheimer's disease
+130 female               5.13       39.93          Spain        hypertension
+131 female               4.53       38.67       Scotland        hypertension
+132   male               5.63       27.78         France           gastritis
+135   male               5.38       44.29        Ukraine         skin cancer
+140 female               6.22       38.42        Germany       breast cancer
+141 female               4.93       42.41          Spain Alzheimer's disease
+144 female               6.01       30.36        Belgium Alzheimer's disease
+145   male               6.77       31.70         Sweden      kidney disease
+147   male               4.33       38.13        Austria     prostate cancer
+150 female               6.05       34.17         Russia  multiple sclerosis
+154 female               5.14       33.60         Poland       breast cancer
+159 female               5.38       43.59         France      kidney disease
+162   male               4.83       29.66        Finland  multiple sclerosis
+163 female               5.47       34.16        Hungary        hypertension
+164 female               4.09       21.68        Belgium Alzheimer's disease
+170   male               5.13       40.17       Scotland         skin cancer
+172 female               5.88       40.24         Sweden         skin cancer
+174   male               3.91       52.57    Netherlands       heart disease
+181   male               5.20       51.11        Ireland  multiple sclerosis
+185   male               3.39       46.54         Poland Alzheimer's disease
+188 female               4.46        4.78        Denmark            HIV/AIDS
+194 female               5.03       34.99        Austria        hypertension
+200   male               5.29       29.86         Sweden           gastritis
+207 female               1.82       37.83    Switzerland       endometriosis
+216   male               6.15       28.46       Portugal            diabetes
+217 female               6.38       37.12         Russia      kidney disease
+218 female               4.93       36.27         Poland       breast cancer
+230   male               4.87       19.63         Sweden     prostate cancer
+232   male               3.73       24.32    Netherlands     prostate cancer
+233 female               5.39       38.90    Switzerland       endometriosis
+235   male               7.62        6.47          Italy Alzheimer's disease
+236 female               4.39       13.52          Spain      kidney disease
+238   male               3.95       42.19         Sweden  multiple sclerosis
+240 female               5.96       25.82        Hungary       heart disease
+243 female               5.54       43.33         France       endometriosis
+244   male               5.06       35.97          Italy       heart disease
+245 female               4.50       16.05        Denmark Alzheimer's disease
+250 female               2.97       36.96       Portugal       schizophrenia
+252 female               6.94       34.57          Spain Alzheimer's disease
+259   male               5.34       26.01    Netherlands         skin cancer
+263   male               7.49       51.67         France            diabetes
+264   male               6.60       34.88       Scotland     prostate cancer
+265   male               2.99       26.00       Scotland        hypertension
+269 female               6.48       28.92        Belgium        hypertension
+272 female               3.14       27.76        Ukraine           gastritis
+275   male               5.73       51.09          Spain     prostate cancer
+279   male               5.82       25.76        Belgium     prostate cancer
+281   male               5.45       33.81        Ireland     prostate cancer
+284 female               6.59       37.07        Finland Alzheimer's disease
+285   male               2.34       26.88         Poland       heart disease
+287   male               3.44       35.39 Czech Republic         skin cancer
+288   male               6.45        6.25         Poland     prostate cancer
+289 female               7.13       44.80        Finland        hypertension
+293   male               3.00       32.50        England      kidney disease
+294 female               5.02       38.27        Belgium       breast cancer
+295   male               1.71       23.50 Czech Republic     prostate cancer
+300 female               2.82       41.48 Czech Republic        hypertension
+301   male               3.48       31.27          Italy      kidney disease
+303   male               5.97       18.17         France Alzheimer's disease
+304   male               4.43       23.78    Netherlands         skin cancer
+305   male               7.47       42.91         France Alzheimer's disease
+310 female               5.67       13.06       Portugal Alzheimer's disease
+312 female               3.43       33.45         Sweden         skin cancer
+313   male               4.82       42.43        Ireland            diabetes
+317 female               4.48       21.78       Portugal       breast cancer
+322 female               5.00       30.11        Belgium        hypertension
+324   male               3.63       22.66        Hungary  multiple sclerosis
+328 female               2.63       16.79        Austria            diabetes
+330 female               6.91       19.64        Ukraine         skin cancer
+332   male               6.08       45.62    Switzerland Alzheimer's disease
+335 female               5.80       41.32        Hungary       breast cancer
+336 female               5.11       38.87         Poland        hypertension
+346   male               4.58       19.19       Portugal     prostate cancer
+350   male               4.55       29.35        Denmark Alzheimer's disease
+351   male               5.10       24.72         France         skin cancer
+352   male               5.78       36.42       Scotland     prostate cancer
+353   male               4.08       37.50        Austria           gastritis
+355 female               4.39        8.15       Scotland       heart disease
+356 female               5.99       15.75         Russia         skin cancer
+357 female               2.37       27.40         Poland       heart disease
+362   male               5.61       34.51       Scotland Alzheimer's disease
+367   male               3.87       40.26        Denmark            diabetes
+369   male               4.58       25.86        Belgium        hypertension
+373   male               1.80       30.84        Austria            diabetes
+376 female               4.59       48.00         Russia       breast cancer
+381   male               7.94       41.68         Russia            diabetes
+384   male               5.06       39.91    Switzerland        hypertension
+385 female               6.31       30.37        Ireland         skin cancer
+386   male               5.07        9.78       Portugal     prostate cancer
+388   male               3.62       34.90         France         skin cancer
+389 female               6.82       38.46         Poland         skin cancer
+390 female               5.39       40.37          Italy       breast cancer
+391   male               5.94       47.04       Scotland Alzheimer's disease
+393 female               6.54       24.28         Sweden  multiple sclerosis
+397   male               3.59       35.29         Russia Alzheimer's disease
+398   male               5.38       31.73         France       heart disease
+399 female               6.21       35.96        Germany        hypertension
+400 female               1.95       29.82        Austria            diabetes
+404 female               2.08       25.67 Czech Republic       endometriosis
+405 female               3.69       37.51        Hungary       schizophrenia
+407   male               7.19       19.10          Spain     prostate cancer
+411   male               3.77       32.87          Spain            HIV/AIDS
+415 female               4.44       23.92         France Alzheimer's disease
+419   male               6.15       28.55        Denmark        hypertension
+430   male               5.41       36.59         Poland      kidney disease
+432   male               5.38       49.71        Belgium Alzheimer's disease
+435 female               1.39       35.31        Belgium            HIV/AIDS
+442 female               5.55       42.01        Hungary Alzheimer's disease
+445 female               6.30       35.37    Netherlands       heart disease
+447 female               3.85       21.37        Ireland            diabetes
+448 female               6.75       44.27        Denmark       breast cancer
+449   male               4.09       35.47         France Alzheimer's disease
+450 female               6.55       37.76         Sweden         skin cancer
+451   male               4.81       15.75        Denmark           gastritis
+453   male               3.70       31.77        Hungary         skin cancer
+454   male               4.26       20.04       Portugal     prostate cancer
+456 female               5.56       20.33        Austria       breast cancer
+457   male               2.94       13.42         Russia     prostate cancer
+460   male               5.25       35.14        Ukraine        hypertension
+461 female               4.47       27.98        Hungary        hypertension
+463   male               5.17       26.17       Portugal            HIV/AIDS
+465   male               6.59       24.90         Sweden Alzheimer's disease
+466 female               4.79       17.22    Netherlands Alzheimer's disease
+467 female               6.00       31.51        Austria       heart disease
+476   male               4.32       41.85        Ukraine         skin cancer
+477   male               3.43       30.98          Spain      kidney disease
+479   male               3.91       34.55    Netherlands     prostate cancer
+490   male               3.90       35.77        Hungary        hypertension
+493 female               5.01       31.66        England         skin cancer
+496   male               5.62       35.13       Scotland      kidney disease
+500   male               6.12       32.68         Russia           gastritis
+501   male               5.08       36.47        England           gastritis
+504 female               5.83       39.81       Scotland Alzheimer's disease
+506   male               5.94       42.58 Czech Republic     prostate cancer
+509   male               6.35       27.78        Austria           gastritis
+514   male               4.01       26.18    Switzerland  multiple sclerosis
+515   male               4.88       32.69 Czech Republic         skin cancer
+516   male               5.67       26.69         Poland            diabetes
+517 female               4.04       12.84    Switzerland Alzheimer's disease
+520 female               4.53       22.72       Scotland       breast cancer
+523   male               5.45       27.42        Ukraine        hypertension
+528 female               4.91       20.22        Ukraine      kidney disease
+531 female               3.88       21.00 Czech Republic        hypertension
+533   male               6.82       24.93        Finland       heart disease
+534 female               4.46       14.34        Ireland  multiple sclerosis
+536   male               5.15       31.21       Scotland     prostate cancer
+539   male               3.81       34.10          Spain Alzheimer's disease
+540 female               4.35       27.94       Scotland      kidney disease
+541   male               6.45       29.23        Germany     prostate cancer
+542   male               5.43       34.09    Netherlands Alzheimer's disease
+543   male               4.45       30.31       Scotland Alzheimer's disease
+544   male               6.18       24.47         Poland         skin cancer
+551 female               5.94       16.91         Poland      kidney disease
+556   male               3.05       22.53         France            diabetes
+557   male               6.98       26.01        Ireland     prostate cancer
+558   male               2.27       33.39         France  multiple sclerosis
+559   male               7.68       31.80    Switzerland       schizophrenia
+564 female               4.73       35.61        England        hypertension
+579   male               2.44       23.73 Czech Republic  multiple sclerosis
+583   male               5.80       28.62        Belgium     prostate cancer
+584   male               5.18       34.00    Netherlands            HIV/AIDS
+585 female               3.78       37.55          Italy       breast cancer
+ [ reached 'max' / getOption("max.print") -- omitted 477 rows ]
+
+
+[1] "#4. Using a table , indicate the number of rows that have any missing value and the number that do not."
+FALSE  TRUE 
+ 2000 	 0
+
+[1] "#5. Provide a summary of the data for each column, showing \"Min, 1st Qu,Median Mean, 3rd Qu and Max\" for each numerical column and the Number of each Category for categorical data."
+[1] "id"
+
+        Aaliyah Blair          Aaliyah Boyd        Aaliyah Grimes     Aaliyah Gutierrez         Aaliyah Perez 
+                    1                     1                     1                     1                     1 
+    Aaliyah Wilkinson      Aaliyah Williams          Aaron Becker         Aaron Burgess            Aaron Chan 
+                    1                     1                     1                     1                     1 
+         Aaron Dawson            Aaron Hall        Aaron Mcdaniel        Aaron Mcknight          Aaron Meyers 
+                    1                     1                     1                     1                     1 
+        Aaron Shelton           Aaron Watts         Abigail Brown         Abigail Carey       Abigail Edwards 
+                    1                     1                     1                     1                     1 
+    Abigail Fernandez          Abigail Hall        Abigail Harper         Abigail Henry       Abigail Higgins 
+                    1                     1                     1                     1                     1 
+       Abigail Ibarra    Abigail Mclaughlin       Abigail Rodgers     Abigail Rodriguez          Abigail Ryan 
+                    1                     1                     1                     1                     1 
+     Abigail Santiago         Abigail Smith         Abigail White         Abraham Cross        Abraham Rivera 
+                    1                     1                     1                     1                     1 
+         Adalyn Adams       Adalyn Atkinson         Adalynn Brown          Adalynn Hale       Adalynn Hawkins 
+                    1                     1                     1                     1                     1 
+       Adalynn Waters           Adam Booker           Adam Bowman            Adam Braun           Adam Parker 
+                    1                     1                     1                     1                     1 
+        Adam Peterson             Adam Rice       Adam Strickland         Adam Sullivan         Adam Thompson 
+                    1                     1                     1                     1                     1 
+     Addison Anderson          Addison Bell        Addison Castro         Addison Combs         Addison Gomez 
+                    1                     1                     1                     1                     1 
+        Addison Jones         Addison Ramos      Addison Schwartz         Addison Smith        Addison Spears 
+                    1                     1                     1                     1                     1 
+       Addison Walker      Addison Williams      Adeline Chandler          Adeline Long        Adeline Miller 
+                    1                     1                     1                     1                     1 
+         Adrian Beard     Adrian Montgomery         Adrian Morgan          Adrian Smith          Adrian Villa 
+                    1                     1                     1                     1                     1 
+   Adriana Hutchinson      Adriana Schwartz       Adriana Stewart       Adriana Wiggins           Aidan Bruce 
+                    1                     1                     1                     1                     1 
+       Aidan Gonzales           Aidan Jones            Aidan Webb           Aiden Banks          Aiden Bowman 
+                    1                     1                     1                     1                     1 
+          Aiden Davis       Aiden Gallagher          Aiden Galvan           Aiden Hines             Aiden May 
+                    1                     1                     1                     1                     1 
+         Aiden Romero          Aiden Thomas           Alaina Hunt            Alan Adams          Alan Jackson 
+                    1                     1                     1                     1                     1 
+           Alan Jones             Alan Park        Alana Anderson          Alana Weaver        Alejandro Ball 
+                    1                     1                     1                     1                     1 
+       Alejandro Ward             Alex Cruz             Alex Luna            Alex Reyes             Alex Rose 
+                    1                     1                     1                     1                     1 
+        Alexa Coleman         Alexa Preston         Alexa Wallace    Alexander Anderson    Alexander Gonzalez 
+                    1                     1                     1                     1                     1 
+     Alexander Guerra   Alexander Hendricks       Alexander Henry     Alexander Herrera       Alexander Hicks 
+                    1                     1                     1                     1                     1 
+   Alexander Mcdowell    Alexander Mitchell       Alexander Moore       Alexander Perry        Alexander Wise 
+                    1                     1                     1                     1                     1 
+     Alexandra Guerra   Alexandra Hernandez       Alexandra Young      Alexis Carpenter        Alexis Higgins 
+                    1                     1                     1                     1                     1 
+        Alexis Thomas          Alexis Welch           Alice Allen          Alice Arroyo         Alice Coleman 
+                    1                     1                     1                     1                     1 
+        Alice Proctor            Alice Snow          Alice Taylor          Aliyah Jones           Aliyah Vega 
+                    1                     1                     1                     1                     1 
+      Allison Delgado         Allison Evans        Allison Harper          Allison Hart     Allison Hernandez 
+                    1                     1                     1                     1                     1 
+       Allison Howard         Allison Lopez       Allison Perkins         Alyssa Arnold         Alyssa Foster 
+                    1                     1                     1                     1                     1 
+         Alyssa Jones          Alyssa Meyer         Alyssa Miller          Alyssa Walls         Amelia Bryant 
+                    1                     1                     1                     1                     1 
+         Amelia Foley         Amelia Garcia        Amelia Gardner       Amelia Mitchell          Amelia Nixon 
+                    1                     1                     1                     1                     1 
+       Amelia Oconnor       Amelia Robinson          Amelia Smith       Amelia Thompson        Amelia Vazquez 
+                    1                     1                     1                     1                     1 
+        Amelia Warren         Amy Carpenter           Amy Herring        Amy Montgomery           Amy Randall 
+                    1                     1                     1                     1                     1 
+        Andrea Vargas         Andrew Dalton          Andrew Davis        Andrew Johnson          Andrew Moyer 
+                    1                     1                     1                     1                     1 
+        Andrew Porter           Andrew Shaw     Andrew Washington           Andrew Webb          Andrew White 
+                    1                     1                     1                     1                     1 
+      Andrew Woodward          Angel Conley          Angel Guzman          Angel Parker          Angel Pruitt 
+                    1                     1                     1                     1                     1 
+        Angela Atkins        Angela Frazier        Angelina Hogan           Anna Castro             Anna Hall 
+                    1                     1                     1                     1                     1 
+        Anna Jacobson            Anna Silva            Anna Simon           Anna Wagner    Annabelle Carrillo 
+                    1                     1                     1                     1                     1 
+      Annabelle Kelly     Annabelle Russell          Anthony Byrd      Anthony Castillo       Anthony Cordova 
+                    1                     1                     1                     1                     1 
+        Anthony Frank          Anthony Horn      Anthony Matthews         Anthony Smith        Anthony Thomas 
+                    1                     1                     1                     1                     1 
+        Anthony Villa      Antonio Mcknight       Antonio Nielsen          Aria Fleming         Aria Gonzalez 
+                    1                     1                     1                     1                     1 
+            Aria Hill            Aria Jones          Aria Maxwell            Aria Moore             Aria Wong 
+                    1                     1                     1                     1                     1 
+      Ariana Campbell     Ariana Cunningham          Ariana Davis            Ariana Kim         Ariana Miller 
+                    1                     1                     1                     1                     1 
+        Ariana Rogers          Ariana Smith       Arianna Fleming        Arianna Fuller         Arianna Moore 
+                    1                     1                     1                     1                     1 
+       Arianna Taylor         Arianna Wolfe           Ariel Lewis           Ariel Mason           Asher Allen 
+                    1                     1                     1                     1                     1 
+            Asher Fry          Asher Martin          Asher Rivera           Asher Silva        Asher Thompson 
+                    1                     1                     1                     1                     1 
+          Asher White         Ashley Bailey          Ashley Gould       Ashley Petersen         Ashley Wilson 
+                    1                     1                     1                     1                     1 
+       Ashton Chapman         Ashton Martin         Aubree Barron       Aubree Bautista           Aubree Gray 
+                    1                     1                     1                     1                     1 
+        Aubree Howell        Aubree Navarro         Aubree Willis          Aubrey Bates         Aubrey Clarke 
+                    1                     1                     1                     1                     1 
+         Aubrey Davis           Aubrey Gray            Aubrey Lee          Aubrey Lucas      Aubrey Macdonald 
+                    1                     1                     1                     1                     1 
+        Aubrey Macias        Aubrey Parsons           Aubrey Pugh      Aubrey Rodriguez          Audrey Bates 
+                    1                     1                     1                     1                     1 
+          Audrey Buck         Audrey Castro        Audrey Johnson       Audrey Oconnell     Audrey Williamson 
+                    1                     1                     1                     1                     1 
+       Aurora Elliott      Aurora Schroeder         Austin Becker          Austin Carey         Austin Harris 
+                    1                     1                     1                     1                     1 
+        Austin Holmes        Austin Johnson         Autumn Arnold         Autumn Guzman          Autumn Munoz 
+                    1                     1                     1                     1                     1 
+         Autumn Ortiz      Autumn Stevenson          Autumn Young           Ava Gardner          Ava Gonzales 
+                    1                     1                     1                     1                     1 
+          Ava Johnson              Ava Kemp             Ava Mills             Ava Moyer           Ava Nichols 
+                    1                     1                     1                     1                     1 
+       Ava Richardson              Ava Roth            Ava Tucker          Avery Abbott          Avery Barker 
+                    1                     1                     1                     1                     1 
+           Avery Chan            Avery Dean         Avery Johnson         Avery Lambert          Avery Lowery 
+                    1                     1                     1                     1                     1 
+        Avery Marquez            Avery Mora            Avery Pope            Avery Rice         Avery Shaffer 
+                    1                     1                     1                     1                     1 
+         Avery Wagner           Axel Santos          Ayden Cooper          Ayden Gibson        Ayden Jennings 
+                    1                     1                     1                     1                     1 
+            Ayden Ray         Ayden Rodgers            Ayden Rush          Ayden Wilson           Bailey King 
+                    1                     1                     1                     1                     1 
+        Bailey Morgan         Bailey Morris         Bella Bennett           Bella Dixon          Bella Herman 
+                    1                     1                     1                     1                     1 
+       Bella Martinez         Bella Sanchez           Bella Small          Benjamin Ali        Benjamin Gomez 
+                    1                     1                     1                     1                     1 
+      Benjamin Keller        Benjamin Kelly       Benjamin Nelson       Benjamin Patton      Benjamin Ramirez 
+                    1                     1                     1                     1                     1 
+       Benjamin Smith        Bennett Harris         Bennett Jones       Bentley Clayton          Bentley Hall 
+                    1                     1                     1                     1                     1 
+       Bentley Rogers        Bentley Thomas        Bentley Wilson           Blake Brown            Blake Hess 
+                    1                     1                     1                     1                     1 
+         Blake Hunter             Blake Liu        Blake Melendez           Blake Perez           Brady Braun 
+                    1                     1                     1                     1                     1 
+         Brady Durham           Brady Pratt      Brandon Gonzalez      Brandon Hamilton     Brandon Henderson 
+                    1                     1                     1                     1                     1 
+       Brandon Joseph       Brandon Montoya          Brandon Reed      Brandon Williams      Brantley Andrews 
+                    1                     1                     1                     1                     1 
+       Brantley White       Braxton Herrera         Braxton Jones     Brayden Blackwell      Brayden Johnston 
+                    1                     1                     1                     1                     1 
+     Brayden Phillips       Brayden Roberts       Brayden Serrano          Brayden Wong          Brian Nelson 
+                    1                     1                     1                     1                     1 
+       Brian Robinson      Brianna Anderson         Brianna Brown      Brianna Franklin        Brianna Obrien 
+                    1                     1                     1                     1                     1 
+        Brianna Olsen        Brianna Rivera       Brianna Robbins      Brielle Gonzales         Brielle Mason 
+                    1                     1                     1                     1                     1 
+         Brody Butler        Brody Odonnell         Brooke Keller           Brooke Koch       Brooklyn Dennis 
+                    1                     1                     1                     1                     1 
+        Brooklyn Hays      Brooklyn Johnson        Brooklyn Lloyd        Brooklyn Marks      Brooklyn Mcclain 
+                    1                     1                     1                     1                     1 
+       Brooklyn Moore        Brooklyn Roman       Brooklyn Walker        Brooklyn White       Brooklynn Baker 
+                    1                     1                     1                     1                     1 
+      Bryan Dickerson          Bryce Graham         Bryce Johnson         Bryson Acosta          Bryson Davis 
+                    1                     1                     1                     1                     1 
+           Bryson Fox          Bryson Lopez        Caden Jacobson           Caleb Crane           Caleb Davis 
+                    1                     1                     1                     1                     1 
+        Caleb Douglas          Caleb Harris         Caleb Johnson           Caleb Kelly         Caleb Kennedy 
+                    1                     1                     1                     1                     1 
+           Caleb Koch          Caleb Larson           Caleb Lynch       Caleb Mcconnell         Caleb Schultz 
+                    1                     1                     1                     1                     1 
+          Caleb Smith           Caleb Vance          Caleb Vargas         Caleb Wallace           Calvin Ward 
+                    1                     1                     1                     1                     1 
+         Camden Davis        Camden Vincent          Camden Wolfe        Cameron Garcia        Cameron Medina 
+                    1                     1                     1                     1                     1 
+        Cameron Singh          Cameron Tran      Cameron Williams        Camila Freeman        Camila Kennedy 
+                    1                     1                     1                     1                     1 
+          Camila Lamb           Carlos Bass     Carlos Cunningham          Carlos Smith        Caroline Adams 
+                    1                     1                     1                     1                     1 
+        Caroline Bell      Caroline Roberts      Caroline Sanchez      Caroline Sanders      Caroline Shaffer 
+                    1                     1                     1                     1                     1 
+     Caroline Sweeney     Caroline Williams          Carson Allen          Carson Brown          Carson Quinn 
+                    1                     1                     1                     1                     1 
+        Carson Tucker          Carter Adams       Carter Anderson           Carter Bell       Carter Copeland 
+                    1                     1                     1                     1                     1 
+        Carter Garner        Carter Parsons    Catherine Mcdonald     Catherine Mullins     Catherine Perkins 
+                    1                     1                     1                     1                     1 
+   Catherine Phillips        Cayden Holland       Charles Johnson       Charles Parrish       Charles Roberts 
+                    1                     1                     1                     1                     1 
+        Charles Silva       Charles Whitney          Charles Wood     Charlotte Johnson       Charlotte Patel 
+                    1                     1                     1                     1                     1 
+     Charlotte Strong    Charlotte Thompson         Chase Garrett         Chase Roberts          Chloe Cooper 
+                    1                     1                     1                     1                     1 
+        Chloe Estrada         Chloe Salinas         Chloe Sampson    Christian Alvarado     Christian Collins 
+                    1                     1                     1                     1                     1 
+      Christian Green        Christian King      Christian Krause       Christian Lopez        Christian Mack 
+                    1                     1                     1                     1                     1 
+  Christopher Aguilar      Christopher Boyd    Christopher Burton Christopher Hernandez  Christopher Holloway 
+                    1                     1                     1                     1                     1 
+  Christopher Johnson        Christopher Li    Christopher Reeves Christopher Robertson     Christopher Scott 
+                    1                     1                     1                     1                     1 
+  Christopher Simmons  Christopher Stephens  Christopher Sullivan          Claire Bates        Claire Mueller 
+                    1                     1                     1                     1                     1 
+         Claire Riley          Clara Carter           Clara Hicks           Clara Ortiz             Clara Ray 
+                    1                     1                     1                     1                     1 
+      Clara Rodriguez           Cole Austin           Cole Dalton          Cole Richard         Colin Harding 
+                    1                     1                     1                     1                     1 
+          Colin Jones           Colin Kelly            Colin Wise         Colton Hodges           Colton Khan 
+                    1                     1                     1                     1                     1 
+          Colton Lamb         Colton Meyers           Colton Odom         Colton Powell        Connor Aguirre 
+                    1                     1                     1                     1                     1 
+         Connor Crane        Connor Delgado          Connor Glass        Connor Johnson         Connor Levine 
+                    1                     1                     1                     1                     1 
+      Connor Mcdonald          Connor Reyes          Connor Roach        Connor Salazar        Connor Schultz 
+                    1                     1                     1                     1                     1 
+            Cooper Ho       Cooper Melendez          Cooper Ramos            Cora Ochoa         Cora Sheppard 
+                    1                     1                     1                     1                     1 
+         Daisy Fields            Daisy Ford           Daisy James        Damian Elliott         Damian Holmes 
+                    1                     1                     1                     1                     1 
+        Damian Miller        Damian Webster          Daniel Carey            Daniel Day          Daniel Ellis 
+                    1                     1                     1                     1                     1 
+      Daniel Espinoza      Daniel Fernandez         Daniel Holmes         Daniel Murphy         Daniel Norman 
+                    1                     1                     1                     1                     1 
+      Daniel Peterson      Daniel Rodriguez        Daniel Sanchez         Daniel Wilson            David Cole 
+                    1                     1                     1                     1                     1 
+         David Dennis         David Fleming          David Hurley        David Johnston           David Lewis 
+                    1                     1                     1                     1                     1 
+           David Love        David Williams          David Wright           Declan Holt        Declan Johnson 
+                    1                     1                     1                     1                     1 
+         Declan Patel           Declan Tran         Delilah Clark         Delilah Smith        Destiny Suarez 
+                    1                     1                     1                     1                     1 
+         Devin Barnes           Devin Burns        Devin Thompson          Diego Hardin         Dominic Berry 
+                    1                     1                     1                     1                     1 
+      Dominic Vazquez           Dylan Ayala          Dylan Barnes        Dylan Copeland            Dylan Diaz 
+                    1                     1                     1                     1                     1 
+         Dylan Duncan          Dylan Garcia          Dylan Golden           Dylan Moses           Dylan Smith 
+                    1                     1                     1                     1                     1 
+      Dylan Underwood      Easton Dickerson          Easton Dixon          Easton Frank          Eden Jackson 
+                    1                     1                     1                     1                     1 
+       Edward Stewart        Eleanor Flores         Eleanor Hicks         Eleanor Hogan       Eleanor Jimenez 
+                    1                     1                     1                     1                     1 
+         Eleanor Long        Eleanor Ritter       Eleanor Simmons       Eleanor Stewart     Eleanor Valentine 
+                    1                     1                     1                     1                     1 
+       Eleanor Willis            Elena Cruz           Elena Jones        Elena Morrison         Elena Proctor 
+                    1                     1                     1                     1                     1 
+           Eli Glover             Eli Reyes           Eli Salinas            Eli Taylor          Eli Williams 
+                    1                     1                     1                     1                     1 
+           Eli Wilson            Eli Wright       Eliana Johnston         Eliana Kelley     Eliana Stephenson 
+                    1                     1                     1                     1                     1 
+        Eliana Walker           Elias Davis      Elias Montgomery         Elias Vasquez          Elias Walker 
+                    1                     1                     1                     1                     1 
+      Elijah Anderson         Elijah Bishop        Elijah Dickson       Elijah Harrison         Elijah Miller 
+                    1                     1                     1                     1                     1 
+      Elijah Odonnell        Elijah Pearson        Elijah Ramirez         Elijah Reeves      Elijah Robertson 
+                    1                     1                     1                     1                     1 
+       Elijah Sanchez     Elijah Stephenson         Elijah Watson          Elijah Watts          Elise Barber 
+                    1                     1                     1                     1                     1 
+         Elise Briggs         Elise Ramirez            Elise Ross       Elizabeth Adams    Elizabeth Ferguson 
+                    1                     1                     1                     1                     1 
+    Elizabeth Holland     Elizabeth Jackson    Elizabeth Johnston     Elizabeth Manning    Elizabeth Mcdonald 
+                    1                     1                     1                     1                     1 
+     Elizabeth Murphy      Elizabeth Parker     Elizabeth Sanchez       Elizabeth White          Elizabeth Yu 
+                    1                     1                     1                     1                     1 
+          Ella Barnes           Ella Burton           Ella Cannon          Ella Carlson             Ella Frey 
+                    1                     1                     1                     1                     1 
+           Ella Smith         Ella Townsend          Ella Vasquez           Ella Wagner             Ella Ward 
+                    1                     1                     1                     1                     1 
+      Ellie Mccormick         Ellie Mendoza        Ellie Robinson         Emery Manning         Emilia Foster 
+                    1                     1                     1                     1                     1 
+          Emilia Lynn        Emilia Mullins          Emily Brooks          Emily Chavez         Emily Collins 
+                    1                     1                     1                     1                     1 
+         Emily Fowler          Emily Gaines         Emily Johnson            Emily Long            Emily Lowe 
+                    1                     1                     1                     1                     1 
+       Emily Matthews          Emily Peters         Emily Robbins           Emily Smith        Emily Thompson 
+                    1                     1                     1                     1                     1 
+       Emily Townsend           Emily White            Emma Baker            Emma Blake           Emma Chaney 
+                    1                     1                     1                     1                     1 
+            Emma Cook           Emma Cooper           Emma Crosby        Emma Dougherty            Emma Gomez 
+                    1                     1                     1                     1                     1 
+           Emma Grant            Emma Jones           Emma Nguyen             Emma Reed       Emma Richardson 
+                    1                     1                     1                     1                     1 
+        Emma Thompson             Emma Todd         Emma Trujillo            Emma White       Emmanuel Brandt 
+                    1                     1                     1                     1                     1 
+        Emmanuel Gray         Emmanuel King       Emmett Hamilton           Eric Hunter            Eric Lloyd 
+                    1                     1                     1                     1                     1 
+          Eric Norton         Ethan Bennett           Ethan Huber          Ethan Hughes         Ethan Johnson 
+                    1                     1                     1                     1                     1 
+       Ethan Martinez         Ethan Michael           Ethan Moore       Ethan Robertson         Ethan Rodgers 
+                    1                     1                     1                     1                     1 
+      Ethan Rodriguez            Ethan Ruiz         Ethan Sanchez         Ethan Shelton        Ethan Woodward 
+                    1                     1                     1                     1                     1 
+             Eva Cain             Eva Evans            Eva Harper          Eva Mitchell             Eva Moore 
+                    1                     1                     1                     1                     1 
+           Eva Murphy            Eva Newman             Eva Reyes            Evan Allen             Evan Ball 
+                    1                     1                     1                     1                     1 
+            Evan Cook           Evan Morrow           Evan Taylor          Evelyn Adams          Evelyn Baker 
+                    1                     1                     1                     1                     1 
+        Evelyn Cooper          Evelyn Moore         Evelyn Tanner         Evelyn Wilson        Ezekiel Dunlap 
+                    1                     1                     1                     1                     1 
+     Ezekiel Mitchell         Ezekiel Woods         Ezra Alvarado              Ezra Fox          Ezra Francis 
+                    1                     1                     1                     1                     1 
+           Ezra Poole         Ezra Thornton       Faith Blanchard           Faith Davis              Faith Li 
+                    1                     1                     1                     1                     1 
+         Faith Rivera          Faith Turner       Gabriel Allison        Gabriel Benton      Gabriel Espinoza 
+                    1                     1                     1                     1                     1 
+       Gabriel Gentry         Gabriel Hayes         Gabriel Lopez         Gabriel Rocha         Gabriel Russo 
+                    1                     1                     1                     1                     1 
+        Gabriel White        Gabriel Wright    Gabriella Anderson   Gabriella Hernandez        Gabriella Hill 
+                    1                     1                     1                     1                     1 
+    Gabriella Johnson     Gabriella Nichols       Gabriella Ortiz        Gabriella Soto      Gabrielle Watson 
+                    1                     1                     1                     1                     1 
+          Gage Bryant         Gage Morrison            Gage Silva          Gage Stanley           Gavin Davis 
+                    1                     1                     1                     1                     1 
+         Gavin Harris         Gavin Meadows          Gavin Miller           Gavin Moore       Gavin Schneider 
+                    1                     1                     1                     1                     1 
+     Gavin Strickland         Gavin Wheeler        Gavin Williams         Genesis Ellis         Genesis Riley 
+                    1                     1                     1                     1                     1 
+          George Dunn        George Stevens         Gianna Archer         Gianna Garcia        Gianna Gilbert 
+                    1                     1                     1                     1                     1 
+        Gianna Martin          Gianna White          Gianna Young     Giovanni Anderson         Giovanni Byrd 
+                    1                     1                     1                     1                     1 
+      Giovanni Thomas       Giovanni Valdez        Giselle Conner       Giselle Houston       Grace Alexander 
+                    1                     1                     1                     1                     1 
+        Grace Patrick            Grace Wong         Gracie Arnold        Gracie Krueger           Grant Brown 
+                    1                     1                     1                     1                     1 
+       Grayson Carter        Grayson Cortez        Grayson Martin       Grayson Rodgers         Grayson Young 
+                    1                     1                     1                     1                     1 
+         Greyson Holt      Greyson Martinez       Greyson Navarro         Greyson Walsh       Hadley Gonzalez 
+                    1                     1                     1                     1                     1 
+      Hadley Jennings           Hadley Kemp         Hadley Martin          Hadley Mccoy           Hailey Cole 
+                    1                     1                     1                     1                     1 
+     Hailey Contreras         Hailey Fowler           Hailey King           Hailey Love       Hailey Martinez 
+                    1                     1                     1                     1                     1 
+       Hannah Bentley          Hannah Brady           Hannah Cook          Hannah Jones          Hannah Klein 
+                    1                     1                     1                     1                     1 
+       Hannah Morales          Hannah Owens        Hannah Roberts           Hannah Rowe         Hannah Taylor 
+                    1                     1                     1                     1                     1 
+     Hannah Underwood         Harmony Brown        Harmony Torres           Harper Cole       Harper Gonzalez 
+                    1                     1                     1                     1                     1 
+       Harper Jackson        Harper Johnson        Harper Kennedy           Harper King         Harper Madden 
+                    1                     1                     1                     1                     1 
+        Harper Nelson          Harper Smith         Harper Taylor          Harper Wolfe      Harrison Brennan 
+                    1                     1                     1                     1                     1 
+      Harrison Walker        Hayden Elliott         Hayden Hurley           Hazel James           Hazel Lewis 
+                    1                     1                     1                     1                     1 
+           Hazel Nash          Hazel Porter          Henry Cooper      Henry Cunningham            Henry Dunn 
+                    1                     1                     1                     1                     1 
+        Henry Francis          Henry Jensen         Henry Pacheco        Henry Stephens          Henry Wagner 
+                    1                     1                     1                     1                     1 
+        Hudson Obrien     Hudson Pennington        Hudson Simpson         Hunter Bryant           Hunter Carr 
+                    1                     1                     1                     1                     1 
+          Hunter Mann         Hunter Medina       Hunter Morrison          Hunter Tapia       Hunter Williams 
+                    1                     1                     1                     1                     1 
+         Ian Mckinney           Ian Morales          Ian Richmond          Ian Williams           Isaac Drake 
+                    1                     1                     1                     1                     1 
+        Isaac Hawkins          Isaac Hughes            Isaac Rich         Isaac Rodgers       Isaac Rodriguez 
+                    1                     1                     1                     1                     1 
+       Isaac Williams         Isabel Morris     Isabella Alvarado         Isabella Ball      Isabella Bennett 
+                    1                     1                     1                     1                     1 
+       Isabella Brady      Isabella Camacho     Isabella Cisneros        Isabella Clark          Isabella Cox 
+                    1                     1                     1                     1                     1 
+       Isabella Davis      Isabella Delgado         Isabella Diaz    Isabella Hernandez       Isabella Jensen 
+                    1                     1                     1                     1                     1 
+      Isabella Jordan         Isabella Kirk         Isabella Lara          Isabella Lee      Isabella Maynard 
+                    1                     1                     1                     1                     1 
+      Isabella Miller       Isabella Norman        Isabella Nunez     Isabella Oconnell      Isabella Perkins 
+                    1                     1                     1                     1                     1 
+      Isabella Rogers      Isabella Rollins      Isabella Summers       Isabella Thomas     Isabella Williams 
+                    1                     1                     1                     1                     1 
+       Isabelle Brock       Isabelle Conrad       Isabelle Holden     Isabelle Williams           Isaiah Bean 
+                    1                     1                     1                     1                     1 
+      Isaiah Gonzales        Isaiah Herring          Isaiah James         Isaiah Little         Isaiah Rhodes 
+                    1                     1                     1                     1                     1 
+         Isaiah Sloan            Isla Smith            Ivan Beard              Ivan Lee         Ivan Robinson 
+                    1                     1                     1                     1                     1 
+          Ivy Freeman       Izabella Miller        Izabella Myers     Izabella Peterson         Jace Gonzales 
+                    1                     1                     1                     1                     1 
+           Jack Davis             Jack Gray         Jack Harrison          Jack Lindsey           Jack Palmer 
+                    1                     1                     1                     1                     1 
+           Jack Smith     Jackson Alexander      Jackson Anderson        Jackson Bailey        Jackson Garcia 
+                    1                     1                     1                     1                     1 
+       Jackson Palmer         Jackson Perez       Jackson Schmidt       Jackson Shannon        Jackson Turner 
+                    1                     1                     1                     1                     1 
+          Jacob Davis         Jacob Elliott           Jacob Evans       Jacob Gallagher          Jacob Galvan 
+                    1                     1                     1                     1                     1 
+        Jacob Hancock       Jacob Hernandez         Jacob Jackson         Jacob Montoya        Jacob Peterson 
+                    1                     1                     1                     1                     1 
+          Jacob Ramos           Jacob Smith          Jacob Warren        Jacob Williams           Jacob Young 
+                    1                     1                     1                     1                     1 
+          Jade Harris          Jade Miranda            Jade Myers         Jade Robinson            Jade Smith 
+                    1                     1                     1                     1                     1 
+         Jaden Chaney        Jaden Martinez           Jake Glover            Jake Payne             Jake Ruiz 
+                    1                     1                     1                     1                     1 
+         James Austin          James Barber          James Baxter         James Burgess          James Harmon 
+                    1                     1                     1                     1                     1 
+        James Hopkins           James Logan          James Lucero            James Lutz        James Marshall 
+                    1                     1                     1                     1                     1 
+          James Moore          James Nguyen           James Roach            James Ross           James Scott 
+                    1                     1                     1                     1                     1 
+         James Taylor        James Williams        Jameson Bender         Jameson Wells          Jase Estrada 
+                    1                     1                     1                     1                     1 
+        Jase Robinson        Jasmine Garcia          Jasmine Hill          Jasmine Lara          Jasmine Wolf 
+                    1                     1                     1                     1                     1 
+          Jason Brown           Jason Burns          Jason Martin         Jason Osborne           Jason Smith 
+                    1                     1                     1                     1                     1 
+         Jason Walker          Jaxon Miller        Jaxon Morrison         Jaxon Mullins           Jaxon Smith 
+                    1                     1                     1                     1                     1 
+        Jaxon Stanley          Jaxon Walter          Jaxson Brown         Jaxson Parker          Jaxson Simon 
+                    1                     1                     1                     1                     1 
+           Jayce Cole         Jayce Robbins          Jayden Adams          Jayden Craig       Jayden Cummings 
+                    1                     1                     1                     1                     1 
+        Jayden Foster        Jayden Hawkins         Jayden Miller        Jayden Nichols         Jayden Romero 
+                    1                     1                     1                     1                     1 
+ [ reached getOption("max.print") -- omitted 1000 entries ]
+[1] "gender"
+
+female   male 
+   975   1025 
+[1] "dob"
+
+1923-10-10 1924-03-28 1924-09-16 1924-10-23 1925-01-10 1925-09-17 1925-10-24 1925-10-28 1925-11-16 1926-01-10 
+         1          1          1          1          1          1          1          1          1          1 
+1926-01-27 1926-04-15 1926-05-09 1926-05-25 1926-07-22 1926-08-10 1926-11-24 1926-11-26 1927-01-05 1927-05-01 
+         1          1          1          1          1          1          1          1          1          1 
+1927-06-11 1927-08-16 1927-08-28 1927-10-26 1927-10-30 1927-11-28 1928-01-09 1928-01-18 1928-02-01 1928-06-14 
+         1          1          1          1          1          1          1          1          1          1 
+1928-06-16 1928-07-08 1928-07-21 1928-08-12 1928-08-21 1928-09-07 1928-11-16 1928-11-22 1928-12-27 1929-01-12 
+         1          1          1          1          1          1          1          1          1          1 
+1929-01-22 1929-03-10 1929-03-14 1929-03-21 1929-04-03 1929-06-08 1929-06-25 1929-08-12 1929-08-16 1929-08-23 
+         1          1          1          1          1          1          1          1          1          1 
+1929-09-26 1929-10-19 1929-12-27 1930-01-08 1930-01-10 1930-01-15 1930-01-29 1930-02-16 1930-03-02 1930-03-25 
+         1          1          1          1          1          1          1          1          1          1 
+1930-05-05 1930-05-07 1930-06-21 1930-07-02 1930-07-07 1930-07-11 1930-10-26 1930-11-02 1930-12-09 1930-12-17 
+         1          1          1          1          1          1          1          1          1          1 
+1930-12-20 1931-01-10 1931-02-28 1931-04-10 1931-05-21 1931-05-25 1931-06-01 1931-06-29 1931-07-01 1931-07-24 
+         1          1          1          1          1          1          1          1          1          1 
+1931-07-26 1931-09-22 1931-10-06 1931-10-26 1931-11-08 1931-11-17 1931-12-24 1932-02-14 1932-03-22 1932-04-10 
+         1          1          1          1          1          1          2          1          1          2 
+1932-04-15 1932-04-22 1932-05-07 1932-05-18 1932-06-01 1932-06-02 1932-06-04 1932-06-15 1932-06-22 1932-07-02 
+         1          1          1          1          1          1          1          1          1          1 
+1932-07-16 1932-08-22 1932-09-13 1932-09-19 1932-09-23 1932-10-03 1932-10-11 1932-10-14 1932-10-15 1932-10-20 
+         1          1          1          1          1          1          1          1          2          1 
+1932-10-22 1932-11-16 1932-12-03 1932-12-17 1933-01-19 1933-01-30 1933-02-09 1933-02-21 1933-03-19 1933-03-27 
+         1          1          1          1          1          1          1          1          1          1 
+1933-04-09 1933-05-24 1933-05-30 1933-06-03 1933-06-10 1933-06-12 1933-06-14 1933-06-23 1933-06-29 1933-06-30 
+         1          1          1          1          1          1          1          1          1          1 
+1933-07-09 1933-07-14 1933-09-09 1933-09-13 1933-09-15 1933-09-22 1933-10-17 1933-11-12 1934-01-08 1934-01-17 
+         1          1          1          1          1          1          1          1          1          1 
+1934-01-28 1934-02-02 1934-02-27 1934-03-09 1934-03-15 1934-03-16 1934-03-21 1934-03-29 1934-03-30 1934-04-12 
+         2          1          1          1          1          1          1          1          1          1 
+1934-04-15 1934-04-25 1934-05-23 1934-06-12 1934-06-19 1934-06-23 1934-07-01 1934-07-02 1934-07-03 1934-07-09 
+         1          1          1          1          2          1          1          1          1          1 
+1934-08-10 1934-08-11 1934-09-05 1934-09-11 1934-11-12 1934-11-21 1934-12-01 1934-12-06 1934-12-07 1934-12-24 
+         1          1          1          1          1          1          1          1          1          1 
+1935-01-12 1935-01-29 1935-02-05 1935-02-06 1935-03-12 1935-03-30 1935-04-03 1935-04-17 1935-04-20 1935-05-03 
+         1          1          1          1          1          1          1          1          1          1 
+1935-06-11 1935-07-11 1935-07-14 1935-07-27 1935-08-05 1935-08-15 1935-08-22 1935-08-25 1935-09-16 1935-11-04 
+         1          1          1          2          1          1          1          1          1          1 
+1935-11-20 1935-11-25 1935-12-05 1935-12-06 1935-12-07 1935-12-09 1935-12-18 1936-01-16 1936-01-17 1936-01-26 
+         1          1          1          1          1          1          1          1          1          1 
+1936-02-09 1936-02-14 1936-02-22 1936-03-12 1936-04-13 1936-04-24 1936-06-07 1936-06-17 1936-06-28 1936-07-10 
+         1          1          1          1          1          2          1          1          1          1 
+1936-07-11 1936-07-12 1936-07-23 1936-08-07 1936-08-12 1936-08-18 1936-08-26 1936-09-02 1936-09-12 1936-09-17 
+         1          1          1          1          1          1          1          1          1          1 
+1936-09-20 1936-09-22 1936-09-24 1936-10-11 1936-10-12 1936-11-01 1936-11-04 1936-11-30 1936-12-05 1936-12-06 
+         1          1          1          1          1          2          1          1          1          1 
+1936-12-08 1936-12-16 1936-12-29 1937-01-10 1937-02-03 1937-02-04 1937-03-01 1937-03-12 1937-04-05 1937-04-07 
+         1          1          1          1          1          1          1          1          1          1 
+1937-04-12 1937-04-24 1937-06-11 1937-07-06 1937-07-23 1937-07-27 1937-08-03 1937-08-07 1937-08-10 1937-08-14 
+         1          1          1          1          1          1          1          1          1          1 
+1937-08-25 1937-08-30 1937-09-06 1937-09-19 1937-09-27 1937-10-04 1937-10-16 1937-10-19 1937-10-24 1937-11-21 
+         1          1          1          1          1          1          1          1          1          1 
+1937-12-17 1937-12-20 1937-12-24 1938-01-03 1938-01-08 1938-01-15 1938-01-22 1938-01-27 1938-01-29 1938-02-16 
+         1          1          1          1          1          1          1          1          1          1 
+1938-03-01 1938-03-02 1938-03-21 1938-04-21 1938-05-20 1938-05-27 1938-07-02 1938-07-18 1938-07-21 1938-08-05 
+         1          1          1          1          1          1          1          1          1          1 
+1938-08-19 1938-08-20 1938-08-27 1938-09-08 1938-09-21 1938-09-22 1938-09-30 1938-10-02 1938-10-07 1938-10-16 
+         1          1          1          1          1          1          1          1          1          1 
+1938-10-17 1938-10-27 1938-10-30 1938-10-31 1938-11-04 1938-11-16 1938-11-19 1938-11-25 1938-11-27 1938-12-16 
+         1          1          1          1          1          1          1          1          1          1 
+1938-12-23 1938-12-25 1939-01-19 1939-01-20 1939-02-20 1939-03-06 1939-03-11 1939-03-21 1939-03-30 1939-03-31 
+         1          1          1          1          1          1          1          1          1          1 
+1939-04-11 1939-04-18 1939-04-24 1939-04-25 1939-05-05 1939-05-11 1939-05-20 1939-05-22 1939-05-30 1939-06-14 
+         1          2          1          1          1          1          1          1          1          1 
+1939-07-17 1939-07-24 1939-08-02 1939-08-06 1939-08-16 1939-08-29 1939-09-03 1939-09-26 1939-09-29 1939-10-08 
+         1          1          1          1          1          1          1          1          1          1 
+1939-10-10 1939-12-22 1939-12-29 1939-12-31 1940-01-09 1940-02-05 1940-02-27 1940-03-11 1940-03-13 1940-04-08 
+         1          1          1          1          1          1          1          1          1          1 
+1940-04-24 1940-04-26 1940-05-01 1940-05-06 1940-05-13 1940-05-14 1940-05-25 1940-05-26 1940-06-10 1940-06-13 
+         1          1          1          1          1          1          1          1          1          1 
+1940-06-17 1940-06-18 1940-06-21 1940-07-08 1940-07-24 1940-07-27 1940-08-07 1940-08-14 1940-08-24 1940-09-07 
+         1          1          1          1          1          1          1          1          1          1 
+1940-09-11 1940-09-23 1940-09-26 1940-10-06 1940-10-13 1940-10-15 1940-10-28 1940-12-01 1940-12-14 1940-12-18 
+         1          1          1          1          1          1          1          1          1          1 
+1941-01-03 1941-01-04 1941-01-11 1941-01-28 1941-01-30 1941-02-07 1941-02-10 1941-04-02 1941-04-07 1941-04-15 
+         1          1          1          1          1          1          1          1          1          1 
+1941-05-26 1941-06-20 1941-06-26 1941-07-07 1941-07-16 1941-08-14 1941-08-21 1941-08-25 1941-09-18 1941-09-26 
+         1          1          1          1          1          1          1          1          2          1 
+1941-10-08 1941-10-14 1941-10-16 1941-10-27 1941-11-06 1941-11-10 1941-11-13 1941-11-21 1941-12-01 1941-12-03 
+         1          1          1          1          1          1          1          1          1          1 
+1941-12-11 1942-01-07 1942-01-13 1942-02-03 1942-02-09 1942-02-21 1942-03-03 1942-03-04 1942-03-09 1942-03-12 
+         1          1          1          1          1          1          1          1          1          1 
+1942-03-17 1942-03-21 1942-03-22 1942-04-01 1942-04-05 1942-04-13 1942-04-29 1942-05-04 1942-05-08 1942-05-11 
+         1          1          1          1          1          1          1          1          1          2 
+1942-05-15 1942-05-31 1942-06-02 1942-06-11 1942-06-16 1942-07-02 1942-07-03 1942-07-10 1942-07-11 1942-07-16 
+         1          1          1          1          1          1          1          1          1          1 
+1942-08-18 1942-09-03 1942-09-07 1942-09-15 1942-09-21 1942-09-22 1942-09-27 1942-10-12 1942-10-15 1942-10-18 
+         1          1          1          1          2          1          1          1          1          1 
+1942-10-21 1942-10-25 1942-10-27 1942-11-15 1942-11-16 1942-11-25 1942-12-20 1942-12-21 1942-12-26 1942-12-27 
+         1          1          1          1          1          1          1          1          1          1 
+1943-01-06 1943-01-12 1943-01-20 1943-02-11 1943-02-20 1943-02-25 1943-03-03 1943-03-09 1943-03-28 1943-03-29 
+         1          1          1          1          1          1          1          1          1          1 
+1943-04-03 1943-04-20 1943-04-30 1943-05-05 1943-05-19 1943-05-21 1943-06-02 1943-06-12 1943-06-26 1943-07-03 
+         1          2          1          1          1          1          1          1          1          1 
+1943-07-06 1943-07-09 1943-07-12 1943-07-15 1943-08-08 1943-08-09 1943-08-20 1943-08-27 1943-08-29 1943-09-01 
+         1          1          1          1          1          2          1          1          1          1 
+1943-09-07 1943-09-16 1943-09-17 1943-09-20 1943-09-22 1943-09-23 1943-10-26 1943-10-27 1943-11-04 1943-11-26 
+         1          1          1          1          1          1          1          1          2          1 
+1943-11-29 1943-12-06 1943-12-10 1943-12-12 1943-12-14 1943-12-24 1943-12-27 1943-12-31 1944-01-21 1944-01-28 
+         1          1          1          1          1          1          2          1          1          1 
+1944-02-02 1944-02-21 1944-02-26 1944-03-03 1944-03-09 1944-03-18 1944-04-19 1944-04-20 1944-04-24 1944-05-14 
+         1          1          1          1          1          1          1          1          1          1 
+1944-05-18 1944-05-19 1944-05-30 1944-06-21 1944-07-13 1944-07-21 1944-07-26 1944-07-30 1944-08-02 1944-08-04 
+         1          1          2          1          1          1          1          2          1          1 
+1944-08-19 1944-09-03 1944-09-04 1944-09-18 1944-09-25 1944-09-27 1944-10-06 1944-10-14 1944-10-18 1944-10-25 
+         1          1          1          1          1          1          1          1          1          1 
+1944-10-26 1944-10-27 1944-11-04 1944-11-19 1944-12-03 1944-12-05 1944-12-12 1944-12-26 1944-12-28 1945-01-03 
+         1          2          1          1          1          1          2          1          1          1 
+1945-01-13 1945-01-30 1945-02-02 1945-02-05 1945-02-13 1945-02-27 1945-02-28 1945-03-01 1945-03-04 1945-03-24 
+         1          1          1          1          1          1          1          1          1          1 
+1945-03-28 1945-04-02 1945-04-03 1945-04-17 1945-04-20 1945-04-30 1945-05-02 1945-05-06 1945-05-13 1945-06-04 
+         1          1          1          1          1          1          1          1          1          1 
+1945-06-25 1945-07-13 1945-07-17 1945-07-30 1945-08-03 1945-08-10 1945-08-24 1945-08-27 1945-08-30 1945-09-08 
+         1          1          1          1          1          1          2          1          1          1 
+1945-09-11 1945-09-12 1945-09-20 1945-09-23 1945-10-02 1945-10-06 1945-10-10 1945-10-17 1945-10-27 1945-10-30 
+         1          2          2          2          1          1          1          1          1          1 
+1945-11-05 1945-11-27 1945-11-30 1945-12-13 1945-12-29 1946-01-07 1946-01-10 1946-01-17 1946-01-20 1946-02-02 
+         2          1          1          1          1          2          1          1          1          1 
+1946-02-03 1946-02-04 1946-02-08 1946-02-10 1946-02-22 1946-03-01 1946-03-05 1946-03-07 1946-03-13 1946-03-22 
+         2          2          1          1          3          1          1          1          1          1 
+1946-04-04 1946-04-09 1946-04-11 1946-04-24 1946-05-01 1946-05-06 1946-05-08 1946-05-10 1946-05-24 1946-06-06 
+         1          1          1          1          1          1          1          1          1          1 
+1946-06-07 1946-06-12 1946-06-15 1946-06-23 1946-06-28 1946-06-30 1946-07-05 1946-07-18 1946-07-27 1946-08-07 
+         1          1          1          2          1          1          1          1          1          1 
+1946-08-27 1946-08-28 1946-09-01 1946-09-03 1946-09-22 1946-09-24 1946-09-29 1946-09-30 1946-10-02 1946-10-16 
+         1          1          1          1          1          1          2          1          1          1 
+1946-10-21 1946-10-25 1946-11-04 1946-11-05 1946-11-10 1946-11-23 1946-11-24 1946-12-09 1946-12-10 1946-12-21 
+         1          1          2          1          1          1          1          1          1          1 
+1946-12-28 1947-01-15 1947-01-16 1947-01-19 1947-01-20 1947-01-28 1947-02-19 1947-02-27 1947-03-03 1947-03-20 
+         2          1          1          1          1          2          1          1          1          1 
+1947-04-17 1947-04-27 1947-05-02 1947-06-08 1947-06-10 1947-06-16 1947-06-18 1947-06-27 1947-06-28 1947-07-03 
+         2          1          1          1          1          1          1          1          1          1 
+1947-07-08 1947-07-10 1947-07-11 1947-07-22 1947-07-30 1947-08-04 1947-08-08 1947-08-13 1947-08-16 1947-08-20 
+         1          1          2          1          1          1          1          1          1          1 
+1947-09-15 1947-09-30 1947-10-03 1947-10-07 1947-10-11 1947-10-20 1947-10-31 1947-11-03 1947-11-04 1947-11-07 
+         1          1          1          1          1          1          1          1          1          1 
+1947-11-08 1947-11-18 1947-11-21 1947-12-05 1947-12-10 1947-12-22 1947-12-29 1947-12-31 1948-01-04 1948-01-07 
+         1          1          1          1          1          1          1          1          1          1 
+1948-02-02 1948-02-08 1948-02-12 1948-02-17 1948-02-23 1948-03-03 1948-03-04 1948-03-06 1948-03-22 1948-03-27 
+         1          1          1          1          1          1          1          1          2          1 
+1948-03-28 1948-03-29 1948-04-02 1948-04-05 1948-04-15 1948-04-22 1948-04-26 1948-04-29 1948-04-30 1948-05-14 
+         1          1          1          1          1          1          1          1          2          1 
+1948-06-04 1948-06-06 1948-06-08 1948-06-25 1948-07-03 1948-07-06 1948-07-16 1948-08-10 1948-08-18 1948-08-21 
+         1          1          1          1          1          1          1          1          1          1 
+1948-08-23 1948-09-10 1948-09-12 1948-09-13 1948-09-18 1948-09-22 1948-09-25 1948-09-26 1948-09-30 1948-10-04 
+         1          1          1          1          2          1          1          1          2          1 
+1948-10-05 1948-10-12 1948-10-13 1948-10-22 1948-10-24 1948-10-27 1948-10-28 1948-11-12 1948-11-19 1948-11-20 
+         1          1          1          1          1          1          1          1          1          1 
+1948-11-22 1948-11-27 1948-12-02 1948-12-10 1948-12-20 1948-12-26 1949-01-28 1949-02-03 1949-02-09 1949-03-13 
+         1          2          1          1          1          1          1          1          1          1 
+1949-03-17 1949-03-23 1949-03-29 1949-04-14 1949-04-19 1949-04-20 1949-04-28 1949-05-11 1949-05-14 1949-05-23 
+         1          1          1          1          1          1          1          1          1          1 
+1949-05-31 1949-06-03 1949-06-07 1949-07-07 1949-07-12 1949-07-24 1949-08-02 1949-08-03 1949-08-26 1949-08-29 
+         1          1          2          1          1          1          1          1          1          1 
+1949-09-03 1949-09-04 1949-09-06 1949-09-11 1949-09-13 1949-09-15 1949-09-24 1949-09-25 1949-09-30 1949-10-03 
+         1          1          1          1          1          3          2          2          2          2 
+1949-10-11 1949-11-05 1949-11-06 1949-11-27 1949-12-11 1949-12-24 1950-01-07 1950-01-09 1950-01-10 1950-01-14 
+         1          1          1          1          1          1          1          1          1          1 
+1950-01-19 1950-01-20 1950-02-13 1950-02-19 1950-02-26 1950-03-09 1950-03-14 1950-03-24 1950-03-25 1950-04-07 
+         1          1          1          1          1          1          1          1          1          1 
+1950-04-08 1950-04-15 1950-04-25 1950-04-26 1950-05-22 1950-06-08 1950-06-19 1950-06-20 1950-07-02 1950-08-04 
+         2          1          1          1          1          1          1          1          1          1 
+1950-08-05 1950-08-19 1950-08-26 1950-09-04 1950-09-11 1950-09-12 1950-09-16 1950-09-27 1950-10-01 1950-10-06 
+         1          1          1          1          1          1          1          1          1          1 
+1950-10-31 1950-11-07 1950-11-10 1950-11-14 1950-11-20 1950-12-06 1950-12-11 1950-12-21 1950-12-22 1951-01-02 
+         1          1          1          1          1          1          1          1          1          1 
+1951-01-16 1951-01-17 1951-01-18 1951-01-25 1951-02-08 1951-02-21 1951-02-24 1951-03-20 1951-03-21 1951-03-26 
+         1          1          1          1          1          1          1          1          1          1 
+1951-03-27 1951-03-30 1951-04-13 1951-04-20 1951-04-25 1951-04-26 1951-05-02 1951-05-04 1951-05-06 1951-05-10 
+         1          1          2          1          1          2          1          1          1          1 
+1951-05-25 1951-05-30 1951-06-03 1951-06-19 1951-06-25 1951-06-29 1951-07-03 1951-07-05 1951-07-25 1951-07-28 
+         1          1          1          1          1          1          1          1          1          1 
+1951-07-31 1951-08-01 1951-08-19 1951-08-20 1951-08-23 1951-09-14 1951-09-16 1951-09-19 1951-10-02 1951-10-17 
+         1          1          1          2          1          1          1          2          1          1 
+1951-10-29 1951-11-06 1951-11-19 1951-11-20 1951-11-26 1951-12-03 1951-12-07 1951-12-13 1951-12-23 1951-12-24 
+         1          1          1          1          1          1          1          1          1          1 
+1952-01-11 1952-01-24 1952-01-27 1952-01-29 1952-02-14 1952-02-19 1952-02-29 1952-03-13 1952-03-26 1952-03-31 
+         1          1          1          1          1          1          1          1          1          1 
+1952-04-04 1952-04-17 1952-04-29 1952-05-03 1952-05-05 1952-05-12 1952-05-18 1952-05-24 1952-06-03 1952-06-08 
+         1          1          1          1          1          1          1          2          1          1 
+1952-06-12 1952-06-14 1952-07-01 1952-07-10 1952-07-12 1952-07-21 1952-07-23 1952-07-25 1952-07-29 1952-07-31 
+         1          1          1          1          1          1          1          1          2          1 
+1952-08-21 1952-09-02 1952-09-09 1952-09-10 1952-09-16 1952-09-24 1952-09-27 1952-10-01 1952-10-31 1952-11-09 
+         1          1          1          1          2          1          1          1          2          1 
+1952-11-12 1952-11-13 1952-11-29 1952-12-04 1952-12-07 1952-12-13 1952-12-20 1952-12-27 1952-12-30 1953-01-06 
+         1          1          1          1          1          1          1          1          1          1 
+1953-01-11 1953-01-12 1953-01-24 1953-01-29 1953-01-31 1953-02-02 1953-02-09 1953-02-18 1953-02-19 1953-03-06 
+         1          2          1          1          1          1          1          1          1          1 
+1953-03-07 1953-03-08 1953-03-09 1953-03-22 1953-03-24 1953-03-26 1953-03-30 1953-04-05 1953-04-07 1953-04-10 
+         1          1          1          1          1          1          1          1          1          1 
+1953-04-12 1953-04-13 1953-04-18 1953-04-20 1953-04-23 1953-04-30 1953-05-05 1953-05-06 1953-05-14 1953-05-18 
+         1          1          1          1          1          1          1          1          1          1 
+1953-05-19 1953-05-24 1953-06-05 1953-06-07 1953-06-09 1953-06-18 1953-07-04 1953-07-16 1953-07-23 1953-08-10 
+         1          1          1          1          1          1          1          1          1          1 
+1953-08-16 1953-08-17 1953-08-18 1953-08-20 1953-08-31 1953-09-26 1953-09-29 1953-10-06 1953-10-11 1953-10-17 
+         1          1          1          1          1          1          1          1          1          1 
+1953-11-04 1953-11-10 1953-12-03 1953-12-04 1953-12-06 1953-12-10 1953-12-17 1953-12-22 1954-01-25 1954-01-26 
+         1          1          1          1          1          1          1          1          1          1 
+1954-02-08 1954-02-18 1954-02-28 1954-03-11 1954-03-19 1954-03-21 1954-03-31 1954-04-02 1954-04-03 1954-04-05 
+         1          1          1          1          1          1          1          2          1          1 
+ [ reached getOption("max.print") -- omitted 877 entries ]
+[1] "zipcode"
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  10001   43221   60612   63388   90008   94110 
+[1] "employment_status"
+
+  employed    retired    student unemployed 
+       769        955         21        255 
+[1] "education"
+
+ bachelors highschool  highscool    masters     phd/md     phD/MD 
+      1076        459          4        280        169         12 
+[1] "marital_status"
+
+married  single 
+   1496     504 
+[1] "children"
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   1.000   2.000   2.267   3.000   7.000 
+[1] "ancestry"
+
+       Austria        Belgium Czech Republic        Denmark        England        Finland         France 
+            97            109             93             94             98             94             92 
+       Germany        Hungary        Ireland          Italy    Netherlands         Poland       Portugal 
+           106             96            121            101             96            104            112 
+        Russia       Scotland          Spain         Sweden    Switzerland        Ukraine 
+            95             85             97            114            115             81 
+[1] "avg_commute"
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  -2.47   23.46   30.32   30.38   37.13   63.73 
+[1] "daily_internet_use"
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.010   4.020   5.010   4.993   5.973   8.820 
+[1] "disease"
+
+Alzheimer's disease       breast cancer            diabetes       endometriosis           gastritis 
+                339                 145                 119                  66                 100 
+      heart disease            HIV/AIDS        hypertension      kidney disease  multiple sclerosis 
+                 87                  80                 298                 185                 113 
+    prostate cancer       schizophrenia         skin cancer 
+                180                  55                 233 
+
+
+[1] "#6. Identify the columns that are having any missing values, and then remove any rows where all of the columns have missing values."
+                id             gender                dob            zipcode  employment_status          education 
+                 0                  0                  0                  0                  0                  0 
+    marital_status           children           ancestry        avg_commute daily_internet_use            disease 
+                 0                  0                  0                  0                  0                  0 
+                  id gender        dob zipcode employment_status  education marital_status children
+1       Amelia Nixon female 1944-03-09   89136           retired  bachelors        married        1
+2        Clara Hicks female 1966-07-02   94105          employed     phd/md        married        4
+3        Mason Brown   male 1981-05-31   89127          employed    masters        married        2
+4       Michael Rice   male 1945-02-13   44101           retired  bachelors        married        2
+5     Eleanor Ritter female 1939-09-03   89136           retired    masters        married        3
+6         Sofia Wise female 1956-10-16   94105        unemployed highschool        married        2
+7       Nevaeh Perry female 1946-09-30   60612           retired     phd/md        married        0
+8      Addison Combs female 1963-01-17   43221          employed  bachelors        married        2
+9      Ashley Wilson female 1946-10-21   89127           retired    masters         single        2
+10        Levi Burns   male 1958-01-31   43210          employed highschool        married        7
+11       Jonah Smith   male 1965-10-30   44101          employed  bachelors        married        1
+12       Bella Small female 1959-03-30   10026           retired  bachelors        married        4
+13        Eli Wilson   male 1949-02-09   94105        unemployed highschool        married        3
+14   Samantha Flores female 1972-12-15   94105          employed  bachelors        married        2
+15       Riley Jones female 1967-11-20   94105          employed  bachelors        married        3
+16       Jake Glover   male 1943-12-27   60605           retired     phd/md        married        2
+17       Marcus Hess   male 1973-06-26   43221          employed  bachelors        married        2
+18  London Rodriguez female 1944-05-19   10001           retired  bachelors        married        1
+19      Adrian Smith   male 1934-02-27   90008           retired  bachelors        married        1
+20     Kaiden Powell   male 1948-11-27   94110           retired  bachelors         single        3
+21      Carlos Smith   male 1929-09-26   89136           retired  bachelors        married        2
+22       Ivy Freeman female 1960-06-25   89127          employed    masters        married        2
+23 Jackson Alexander   male 1961-03-30   94110        unemployed highschool        married        2
+24       Ryan Crosby   male 1953-04-10   89127          employed    masters        married        2
+25     Lily Williams female 1977-05-05   10001          employed  bachelors        married        2
+26  Nicholas Esparza   male 1947-07-08   90008           retired  bachelors        married        5
+27     Isaiah Little   male 1976-03-30   89127          employed  bachelors         single        2
+28   Adam Strickland   male 1933-06-29   94110           retired  bachelors        married        2
+29   Lillian Mcclain female 1956-01-16   94110          employed  bachelors        married        2
+30      Mason Miller   male 1934-12-24   44101           retired    masters        married        4
+31    Austin Johnson   male 1955-11-01   60605          employed highschool         single        1
+32   Robert Chandler   male 1955-03-01   44101          employed  bachelors        married        5
+33 Eliana Stephenson female 1942-09-15   44101           retired highschool        married        2
+34   Valeria Vaughan female 1949-05-31   90015           retired     phd/md        married        2
+35     Emily Robbins female 1945-04-03   89136           retired    masters        married        1
+36    Nicole Freeman female 1950-06-20   44101           retired    masters         single        1
+37     Addison Gomez female 1936-04-13   43221           retired    masters        married        4
+38       Luke Miller   male 1956-08-04   94105          employed  bachelors        married        4
+39   Charles Parrish   male 1943-11-26   90015           retired highschool        married        7
+40     Austin Harris   male 1936-07-23   90008           retired highschool         single        2
+41       Olivia Wong female 1933-09-15   94105           retired  bachelors        married        2
+42       Julia Davis female 1958-08-15   44101          employed  bachelors        married        2
+43   Jessica Daniels female 1957-06-22   44101          employed  bachelors        married        2
+44         Ella Ward female 1962-05-12   94105           retired     phd/md        married        2
+45         Emma Cook female 1940-08-14   43221           retired     phd/md        married        0
+46  Violet Hernandez female 1956-10-10   94105          employed     phd/md        married        2
+47       Jason Smith   male 1951-09-19   10026           retired  bachelors        married        2
+48      Abigail Hall female 1937-08-10   90008           retired  bachelors        married        1
+49   Izabella Miller female 1964-05-28   89127          employed highschool         single        4
+50       Aiden Hines   male 1960-03-30   90008          employed  bachelors         single        3
+51   William Johnson   male 1948-03-06   94110           retired  bachelors         single        2
+52    Vivian Daniels female 1962-09-09   94105        unemployed highschool        married        2
+53    Elijah Sanchez   male 1926-01-10   89136           retired  bachelors        married        2
+54       Ryan Malone   male 1952-08-21   60612          employed  bachelors        married        1
+55     Abigail Carey female 1958-05-27   43210          employed  bachelors        married        2
+56      Leah Goodman female 1969-09-11   60605          employed  bachelors        married        1
+57     Nora Robinson female 1930-03-02   60612           retired  bachelors        married        2
+58     Jase Robinson   male 1960-01-15   10001          employed  bachelors        married        1
+59      Juliana Soto female 1932-04-22   60605           retired  bachelors        married        6
+60 Carlos Cunningham   male 1962-08-10   60612           retired    masters        married        1
+61       Kevin Jones   male 1958-07-12   90015           retired  bachelors         single        0
+62       Khloe White female 1942-10-18   10026           retired  bachelors        married        6
+63 Katherine Raymond female 1970-11-25   10026          employed     phd/md         single        2
+64   Christian Lopez   male 1986-11-15   43221          employed highschool        married        5
+65      Claire Bates female 1931-02-28   90008           retired  bachelors        married        2
+66      Faith Turner female 1932-06-01   44101           retired highschool        married        2
+67      Ashley Gould female 1987-12-04   94105          employed highschool         single        1
+68      Autumn Ortiz female 1936-09-22   94105           retired     phd/md         single        1
+69       David Lewis   male 1969-04-30   90015          employed     phd/md        married        5
+70         Aiden May   male 1945-08-03   89127           retired    masters        married        1
+71      Allison Hart female 1948-11-27   90015           retired     phd/md        married        2
+72     Ellie Mendoza female 1946-10-02   44101           retired     phd/md        married        1
+73      Angel Parker   male 1948-02-23   60605           retired  bachelors        married        2
+74  William Roberson   male 1979-11-27   90008        unemployed highschool         single        0
+75     Jacob Hancock   male 1948-07-06   10001           retired highschool         single        3
+76        Mason Pena   male 1951-05-25   94105        unemployed highschool        married        4
+77      Adalyn Adams female 1970-04-24   43221          employed    masters         single        3
+78   Ellie Mccormick female 1954-03-21   43210          employed    masters        married        2
+79      Skylar Smith female 1969-02-16   90015          employed    masters        married        4
+80        Owen Brown   male 1949-04-28   60612        unemployed highschool         single        0
+81      Hannah Klein female 1970-08-01   90008          employed  bachelors        married        2
+82   Grayson Rodgers   male 1949-11-27   10001        unemployed highschool        married        2
+83     Gabriel Russo   male 1942-04-05   43210           retired     phd/md        married        0
+         ancestry avg_commute daily_internet_use             disease
+1        Portugal       13.38               2.53        hypertension
+2          Sweden       15.16               6.77       endometriosis
+3         Germany       23.60               3.63     prostate cancer
+4         Denmark       19.61               5.00  multiple sclerosis
+5         Austria       36.55               7.75         skin cancer
+6         Austria       48.68               3.34 Alzheimer's disease
+7         Hungary       30.92               6.75      kidney disease
+8         Ireland       20.47               3.01       breast cancer
+9         Austria       39.13               4.12 Alzheimer's disease
+10        Ukraine       37.69               3.15            HIV/AIDS
+11         Russia       36.36               2.19            HIV/AIDS
+12    Netherlands       24.20               2.65  multiple sclerosis
+13        Ireland       49.61               2.52        hypertension
+14    Netherlands       44.11               4.35        hypertension
+15        Ireland       33.01               7.41       heart disease
+16         Poland       46.32               3.15        hypertension
+17         Russia       36.95               3.29        hypertension
+18         Poland        7.39               5.86            diabetes
+19        Belgium       32.77               6.31      kidney disease
+20       Portugal       27.93               7.25        hypertension
+21        Finland       34.84               3.96     prostate cancer
+22        England       43.37               5.65       breast cancer
+23        Belgium       43.83               6.91            HIV/AIDS
+24          Italy       28.79               2.14  multiple sclerosis
+25    Netherlands       21.94               7.20       breast cancer
+26       Portugal       27.98               1.44         skin cancer
+27        Ireland       29.96               5.12     prostate cancer
+28        Austria       23.98               3.64 Alzheimer's disease
+29 Czech Republic       20.72               4.87       endometriosis
+30        Ireland       40.44               7.69           gastritis
+31         France       38.01               4.74      kidney disease
+32         France       26.40               5.25      kidney disease
+33        Belgium       50.57               5.14       breast cancer
+34 Czech Republic       40.66               7.02       breast cancer
+35        Denmark       37.47               4.19        hypertension
+36        Ukraine       33.38               4.02        hypertension
+37        Finland       40.02               6.32            HIV/AIDS
+38        England       37.84               1.82        hypertension
+39       Scotland       29.74               6.62     prostate cancer
+40         Russia       31.22               4.92        hypertension
+41         Sweden       30.82               5.58            diabetes
+42         France       21.48               1.74           gastritis
+43         Russia       24.37               5.56        hypertension
+44        Ireland       16.66               5.63      kidney disease
+45    Netherlands       20.33               3.68 Alzheimer's disease
+46        Ukraine       32.71               4.46 Alzheimer's disease
+47        Ireland       44.11               5.46  multiple sclerosis
+48        Finland       24.33               5.42         skin cancer
+49    Switzerland       19.20               3.78        hypertension
+50    Switzerland       35.44               2.46     prostate cancer
+51        Ireland       18.96               5.52           gastritis
+52        Denmark       37.11               4.93            HIV/AIDS
+53          Italy       21.92               4.83 Alzheimer's disease
+54          Italy       39.52               5.09 Alzheimer's disease
+55         Sweden       23.30               4.91       breast cancer
+56    Netherlands       30.44               5.31           gastritis
+57          Spain       20.46               6.25  multiple sclerosis
+58    Switzerland       16.46               4.76         skin cancer
+59    Netherlands       36.73               3.67 Alzheimer's disease
+60         Sweden       29.55               6.68        hypertension
+61         France       36.08               3.69            diabetes
+62        Ireland       44.45               4.08      kidney disease
+63        Hungary       33.79               3.61      kidney disease
+64          Spain       26.51               5.24            HIV/AIDS
+65          Italy       21.77               3.95            diabetes
+66    Netherlands       23.43               5.69         skin cancer
+67        Hungary       21.97               5.99            HIV/AIDS
+68          Spain       34.03               3.59 Alzheimer's disease
+69         Poland       35.77               5.19            diabetes
+70        Belgium       33.92               4.84     prostate cancer
+71          Italy       43.49               5.63           gastritis
+72        Finland       31.94               8.08        hypertension
+73         Russia       28.85               6.02 Alzheimer's disease
+74        Hungary       41.11               6.36      kidney disease
+75         Sweden       36.65               3.70            diabetes
+76          Spain       33.71               5.55 Alzheimer's disease
+77        Ukraine        9.10               4.02 Alzheimer's disease
+78        Denmark       28.86               5.81            diabetes
+79         France       27.52               1.76 Alzheimer's disease
+80          Spain       25.76               3.31       schizophrenia
+81        Austria       23.69               4.97         skin cancer
+82    Netherlands       36.19               3.33  multiple sclerosis
+83         France       31.81               4.33  multiple sclerosis
+ [ reached 'max' / getOption("max.print") -- omitted 1917 rows ]
+
+
+[1] "#7. Show the average daily usage of the internet for each level of education."
+[1] "bachelors"  "highschool" "highscool"  "masters"    "phd/md"     "phD/MD"    
+[1] "#levels [1] \"bachelors\"  \"highschool\" \"highscool\"  \"masters\"    \"phd/md\"     \"phD/MD\" That is like we need data cleaning to make highscool = highschool and phd/md = phD/MD and nlevels = 4 not 6 so"
+[1] "bachelors"  "highschool" "masters"    "phD/MD"    
+bachelors highschool masters phD/MD 
+ 5.00053 4.952721 5.1015 4.887017
