@@ -1,5 +1,5 @@
 # R-Coding-On-Datasets-Analysis-and-Plotting
-Appling R coding on the medical data from a given file data.csv, which is a dataset of a patient demographic containing standard information regarding individuals from a variety of ancestral lines.
+Bio-Statistics for appling R coding on the medical data from a given file data.csv, which is a dataset of a patient demographic containing standard information regarding individuals from a variety of ancestral lines.
 
 
 ![image](https://user-images.githubusercontent.com/112272836/215321190-d41784ef-278d-4f59-ab16-ae38144f4a08.png)
