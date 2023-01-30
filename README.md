@@ -1,4 +1,4 @@
-# R-Coding-On-Datasets-Analysis-and-Plotting
+# Bio-Statistics-R-Coding-On-Datasets-Analysis-and-Plotting
 Bio-Statistics for appling R coding on the medical data from a given file data.csv, which is a dataset of a patient demographic containing standard information regarding individuals from a variety of ancestral lines.
 
 
